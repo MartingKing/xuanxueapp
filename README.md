@@ -6,3 +6,14 @@
 
 
 具体逻辑是将时间选择转为农历，再更具干支纪年法，五行生克，十二长生，八门九星等宫位排列规则用recyclerview进行计算排序，
+
+![image](https://github.com/MartingKing/xuanxueapp/blob/master/images/1.jpg)
+![image](https://github.com/MartingKing/xuanxueapp/blob/master/images/2.jpg)
+![image](https://github.com/MartingKing/xuanxueapp/blob/master/images/3.jpg)
+![image](https://github.com/MartingKing/xuanxueapp/blob/master/images/4.jpg)
+![image](https://github.com/MartingKing/xuanxueapp/blob/master/images/5.jpg)
+![image](https://github.com/MartingKing/xuanxueapp/blob/master/images/6.jpg)
+![image](https://github.com/MartingKing/xuanxueapp/blob/master/images/7.jpg)
+![image](https://github.com/MartingKing/xuanxueapp/blob/master/images/8.jpg)
+
+联系wx:kotm0066
