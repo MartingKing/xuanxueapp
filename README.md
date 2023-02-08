@@ -19,6 +19,6 @@
 ![image](https://github.com/MartingKing/xuanxueapp/blob/master/images/10.jpeg)
 
 奇门遁甲和八字排盘支持原生代码排盘，也支持服务端排盘，服务端为go语言编写，有需要也可以开发java版的服务端，小程，PC客户端等，有志同道合的朋友可以一起研究AI推算
-![image](https://github.com/MartingKing/xuanxueapp/blob/master/images/11.jpeg)
+![image](https://github.com/MartingKing/xuanxueapp/blob/master/images/11.png)
 
 合作wx:kotm0066
