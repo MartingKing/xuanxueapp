@@ -30,4 +30,6 @@ Android端具体逻辑是将时间选择转为农历，再根据干支纪年法�
 
 使用的第三方库为 https://6tail.cn/calendar/api.html#solar.ymd.html，感谢大佬的无私奉献
 
+## 如果我开源的代码对你有帮助可以请我喝杯茶
+![image](./images/pay.jpeg)
 ## 交流合作wx:kotm0066
