@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Ganzhi Display -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Year -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/nian1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="年" />
+            <TextView
+                android:id="@+id/nian2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="柱" />
+        </LinearLayout>
+
+        <!-- Month -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/yue1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="月" />
+            <TextView
+                android:id="@+id/yue2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="柱" />
+        </LinearLayout>
+
+        <!-- Day -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/ri1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日" />
+            <TextView
+                android:id="@+id/ri2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="柱" />
+        </LinearLayout>
+
+        <!-- Hour -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/shi1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时" />
+            <TextView
+                android:id="@+id/shi2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="柱" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Other Information -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Time: Solar/Lunar"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_ju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="局"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_xunshou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旬首"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+        
+        <TextView
+            android:id="@+id/tv_zhifu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="值符"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_zhishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="值使"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="3"
+        tools:listitem="@layout/item_pan_element" />
+
+</LinearLayout>
