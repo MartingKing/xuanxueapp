@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:gravity="center_horizontal"
+    android:background="@android:drawable/dialog_holo_light_frame">
+
+    <!-- Top Row: Shen, Tianpan, Tianqin -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_bashen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="神"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_tianpangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="天干"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/tv_jiuxing1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="禽星"
+                android:textSize="10sp"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/tv_tiangan1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="禽干"
+                android:textSize="10sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Middle Row: Main Star, Dipan -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/tv_jiuxing2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="九星"
+            android:textSize="12sp"/>
+
+        <ImageView
+            android:id="@+id/iv_makong"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:src="@android:drawable/ic_menu_help" /> <!-- Placeholder icon -->
+
+        <TextView
+            android:id="@+id/tv_dipangan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="地干"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <!-- Bottom Row: Bamen, Gongwei, Changsheng -->
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/tv_bamen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="八门"
+            android:textSize="12sp"/>
+        
+        <TextView
+            android:id="@+id/tv_gongwei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:text="宫"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_changsheng"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="长生"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <!-- Ke Ying Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="2dp">
+        <TextView
+            android:id="@+id/tv_menke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="门克"
+            android:textSize="10sp"
+            android:layout_marginEnd="4dp"/>
+        <TextView
+            android:id="@+id/tv_xingke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="星克"
+            android:textSize="10sp"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+
+</LinearLayout>
